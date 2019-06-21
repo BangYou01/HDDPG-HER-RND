@@ -3,11 +3,23 @@ This repository contains the code to implement the *Hierarchical Deep Determinis
 
 To run the codes, you can first execute the command *"python run_HAC.py --layers 1 --her --normalize  --retrain  --env reach  --episodes 5000 --threadings 1"*. The meaning of the flag is easy to understand, and you can read the option.py file to see all the flags. There is a "performance.jpg" showing the accuracy of training only if the threadings is 1.
 
-Our RND is an off-policy implement as most of the popular Curiosity Driven methods are on-policy recently, so we need to compute the intrinsic reward every batch sampled from the replay buffer because it changes when training.
+Our RND is an off-policy implement as most of the popular Curiosity Driven methods are on-policy recently, so we need to compute the intrinsic reward every batch sampled from the replay buffer because it changes when training. We found that HER+off-policy RND maybe a powerful method for sparse reward problems.
 
 More details will be added later.
 
 Thanks to the author of HAC, HER and RND. 
+
+## Result
+Compare of all methods mixed with HER in FetchReach Env:  
+![image](https://github.com/YangRui2015/Image/blob/master/compare_DDPG_DDPG%2BHER.jpg) 
+
+Compare of all methods in HandReach Env:  
+![image](https://github.com/YangRui2015/Image/blob/master/compare_Random_DDPG.jpg) 
+
+Performance:  
+![image](https://github.com/YangRui2015/Image/blob/master/video_0000000-2.gif) 
+![image](https://github.com/YangRui2015/Image/blob/master/hand_reach_good.gif) 
+
 
 ## Version LOG
 
