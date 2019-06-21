@@ -5,6 +5,8 @@ To run the codes, you can first execute the command *"python run_HAC.py --layers
 
 Our RND is an off-policy implement as most of the popular Curiosity Driven methods are on-policy recently, so we need to compute the intrinsic reward every batch sampled from the replay buffer because it changes when training. We found that HER+off-policy RND maybe a powerful method for sparse reward problems.
 
+You can read the paper LEARNING MULTI-LEVEL HIERARCHIES WITH HINDSIGHT, EXPLORATION BY RANDOM NETWORK DISTILLATION, Hindsight Experience Replay for more detailed algorithm infomation.
+
 More details will be added later.
 
 Thanks to the author of HAC, HER and RND. 
