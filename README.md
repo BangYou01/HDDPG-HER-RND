@@ -38,3 +38,6 @@ Performance:
 1. Use gym to create environment class(so it is easy to use other environment);
 
 2. Hand Reach environment;
+
+### 2019/6/21 Update
+1. update the result of experiment;
